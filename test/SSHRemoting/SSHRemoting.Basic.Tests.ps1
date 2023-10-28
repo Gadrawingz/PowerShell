@@ -8,6 +8,7 @@ Describe "SSHRemoting Basic Tests" -tags CI {
 
     $script:TestConnectingTimeout = 5000    # Milliseconds
 
+    # Definition of Restarting SSHD Service
     function RestartSSHDService
     {
         if ($IsWindows)
